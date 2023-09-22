@@ -74,6 +74,30 @@ void delete_from_front(Node** head)
     delete temp;
 }
 
+
+//function for remove elememt from end
+
+void delete_from_end(Node** head) 
+{
+    if (*head == nullptr) 
+    {
+        cout << "List is empty." << endl;
+        return;
+    }
+
+    
+    Node* prev = nullptr;
+    Node* current = *head;
+
+    while (current->next != nullptr) 
+    {
+        prev = current;
+        current = current->next;
+    }
+
+    delete current;
+    prev->next = nullptr;
+}
 void display(Node* n)
 {
     while (n != NULL)
