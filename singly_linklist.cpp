@@ -14,9 +14,27 @@ int main()
 	second->next = third;
 
 	third->value = 300;
-	third->next = NULL;
+	third->next =forth ;
+       forth->value = 400;
+	forth->next = NULL;
+	
 	display(head);
 
+	front_list(head);
+	back_list(&head);
+
+	list_size(head);
+
+
+	
+	delete_from_front(&head);
+	display(head);
+	delete_from_end(&head);
+		display(head);
+
+	emp=isempty(head);
+
+	
 	insertatfront(&head,-1);
 	insertatend(&head, 1000);
 
