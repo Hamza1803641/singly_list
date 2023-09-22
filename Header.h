@@ -59,6 +59,25 @@ void insertafter(Node** previous, int newvalue)
     newnode->next = previous->next;
     previous->next = newnode;
 }
+//display head
+void front_list(Node* n)
+{
+    cout << "Front Element : " << n->value << endl;
+}
+//display tail
+void back_list(Node** head)
+{
+    Node* last = *head;
+
+    while (last->next != NULL)
+    {
+        last = last->next;
+
+    }
+    cout<<"last element : " << last->value << endl;
+}
+
+
 
 //function for_remove elememt from start
 void delete_from_front(Node** head) 
