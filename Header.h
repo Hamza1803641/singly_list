@@ -61,7 +61,7 @@ void insertafter(Node** previous, int newvalue)
 }
 
 //function for_remove elememt from start
-void delete_from_front(Node** head)
+void delete_from_front(Node** head) 
 {
     if (*head == nullptr) 
     {
