@@ -60,6 +60,19 @@ void insertafter(Node** previous, int newvalue)
     previous->next = newnode;
 }
 
+//function for_remove elememt from start
+void delete_from_front(Node** head)
+{
+    if (*head == nullptr) 
+    {
+        cout << "List is empty." << endl;
+        return;
+    }
+
+    Node* temp = *head;
+    *head = (*head)->next;
+    delete temp;
+}
 
 void display(Node* n)
 {
