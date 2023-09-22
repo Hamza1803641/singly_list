@@ -98,6 +98,18 @@ void delete_from_end(Node** head)
     delete current;
     prev->next = nullptr;
 }
+
+//check empty or not 
+
+bool isempty(Node* head)
+{
+
+    if (head == nullptr)
+    {
+        cout << "List is empty." << endl;
+        return true;
+    }
+}
 void display(Node* n)
 {
     while (n != NULL)
