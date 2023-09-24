@@ -30,10 +30,11 @@ int main()
 	delete_from_front(&head);
 	display(head);
 	delete_from_end(&head);
-		display(head);
+       display(head);
 
 	emp=isempty(head);
-
+         if(emp==true)
+		 cout<<"The list is empty "<<endl;
 	
 	insertatfront(&head,-1);
 	insertatend(&head, 1000);
