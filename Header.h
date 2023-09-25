@@ -43,7 +43,7 @@ void insertatend(Node** head, int newvalue)
 
 }
 
-void insertafter(Node** previous, int newvalue)
+void insertafter(Node* previous, int newvalue)
 {
     //cheak if previous is null
     if (previous == NULL)
