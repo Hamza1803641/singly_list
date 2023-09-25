@@ -25,7 +25,6 @@ int main()
 
 	list_size(head);
 
-
 	
 	delete_from_front(&head);
 	display(head);
